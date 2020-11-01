@@ -7,7 +7,7 @@ const KeyframeAnimation = require('keyframe-animation');
 
 const myAnimation = new KeyframeAnimation();
 myAnimation.set({
-    fps: 60,
+    fps: 60, // frames per second
     duration: 2, // seconds
     animation: 'linear', // linear, ease-out
     iterationCount: 'infinite' // 1, 2, ... , infinite
@@ -61,6 +61,6 @@ export default class MyComponent extends React.Component {
     }
 }
 ```
->You can also decrease the fps to improve the performance.
+You can decrease the fps to improve the performance.
 
 >(50 - 40) is recommended for React/React Native.
