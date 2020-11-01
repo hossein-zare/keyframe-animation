@@ -5,18 +5,18 @@ export = KeyframeAnimation;
 declare class KeyframeAnimation {
   constructor();
 
-  set(Config: ChunkUpload.Config): KeyframeAnimation;
+  set(Config: KeyframeAnimation.Config): KeyframeAnimation;
   keyframes(frames: object): KeyframeAnimation;
-  animate(callback: ChunkUpload.AnimateCallback, resetIteration: boolean): KeyframeAnimation;
+  animate(callback: KeyframeAnimation.AnimateCallback, resetIteration: boolean): KeyframeAnimation;
   stop(): void;
 }
 
-declare namespace ChunkUpload {
+declare namespace KeyframeAnimation {
     export interface Config {
         fps: number,
         duration: number,
-        animation: ['linear', 'ease-out'],
-        iterationCount: number|['infinite'],
+        animation: "linear"|"ease-out",
+        iterationCount: number|"infinite",
     }
 
     export interface AnimateCallback {
