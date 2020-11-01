@@ -1,6 +1,6 @@
 {
   "name": "keyframe-animation",
-  "version": "1.0.0",
+  "version": "3.1.0-beta.0",
   "description": "Pure javascript animation manager similar to css animations with keyframes.",
   "main": "src/index.js",
   "types": "index.d.ts",
@@ -15,8 +15,7 @@
     "javascript",
     "animated"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "author": "Hossein Zare",
   "license": "MIT",
   "bugs": {
