@@ -1,0 +1,26 @@
+{
+  "name": "keyframe-animation",
+  "version": "1.0.0",
+  "description": "Pure javascript animation manager similar to css animations with keyframes.",
+  "main": "src/index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hossein-zare/keyframe-animation.git"
+  },
+  "keywords": [
+    "animation",
+    "keyframes",
+    "css-like",
+    "javascript",
+    "animated"
+  ],
+  "dependencies": {
+  },
+  "author": "Hossein Zare",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hossein-zare/keyframe-animation/issues"
+  },
+  "homepage": "https://github.com/hossein-zare/keyframe-animation#readme"
+}
