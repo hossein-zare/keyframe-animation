@@ -7,7 +7,7 @@ declare class KeyframeAnimation {
 
   set(Config: KeyframeAnimation.Config): KeyframeAnimation;
   keyframes(frames: object): KeyframeAnimation;
-  animate(callback: KeyframeAnimation.AnimateCallback, resetIteration: boolean): KeyframeAnimation;
+  animate(callback: KeyframeAnimation.AnimateCallback, resetIteration?: boolean): KeyframeAnimation;
   stop(): void;
 }
 
@@ -15,8 +15,8 @@ declare namespace KeyframeAnimation {
     export interface Config {
         fps: number,
         duration: number,
-        animation: "linear"|"ease-out",
-        iterationCount: number|"infinite",
+        animation: "linear" | "ease-out",
+        iterationCount: number | "infinite",
     }
 
     export interface AnimateCallback {
