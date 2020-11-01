@@ -7,7 +7,7 @@ declare class KeyframeAnimation {
 
   set(Config: ChunkUpload.Config): KeyframeAnimation;
   keyframes(frames: object): KeyframeAnimation;
-  run(callback: ChunkUpload.RunCallback, resetIteration: boolean): KeyframeAnimation;
+  animate(callback: ChunkUpload.AnimateCallback, resetIteration: boolean): KeyframeAnimation;
   stop(): void;
 }
 
@@ -19,7 +19,7 @@ declare namespace ChunkUpload {
         iterationCount: number|['infinite'],
     }
 
-    export interface RunCallback {
+    export interface AnimateCallback {
         (
             data: object,
         ): void

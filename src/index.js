@@ -131,7 +131,12 @@ export default class KeyframeAnimation {
     return (this.start / this.end) * 100;
   }
 
-  run(callback, resetIteration = true) {
+  /**
+   * Animate.
+   * @param {function} callback 
+   * @param {boolean} resetIteration 
+   */
+  animate(callback, resetIteration = true) {
     // Reset the properties
     this.reset(resetIteration);
 
@@ -174,10 +179,10 @@ export default class KeyframeAnimation {
         clearInterval(this.interval);
 
         if (this.config.iterationCount === 'infinite') {
-          this.run(callback, true);
+          this.animate(callback, true);
         } else if (this.iteratedFor < this.config.iterationCount) {
           this.iteratedFor++;
-          this.run(callback, false);
+          this.animate(callback, false);
         }
       }
 
