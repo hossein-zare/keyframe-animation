@@ -2,6 +2,17 @@
 Pure javascript animation manager similar to css animations with keyframes.
 
 ## Get Started
+### Installation
+via NPM
+```bash
+npm i keyframe-animation
+```
+via Yarn
+```bash
+yarn add keyframe-animation
+```
+
+### Basic Usage
 ```javascript
 const KeyframeAnimation = require('keyframe-animation');
 
@@ -23,12 +34,12 @@ myAnimation.set({
         100: {
             width: 200
         }
-    })
-
-    // Start the animation
-    .animate(data => {
-        document.getElementById('myBox').style.width = `${data.width}px`;
     });
+
+// Start the animation
+myAnimation.animate(data => {
+    document.getElementById('myBox').style.width = `${data.width}px`;
+});
 
 // Stop the animation
 myAnimation.stop();
@@ -39,6 +50,8 @@ myAnimation.stop();
 
 ### How to use Keyframe Animation in React/React Native?
 ```javascript
+import KeyframeAnimation from 'keyframe-animation';
+
 export default class MyComponent extends React.Component {
     constructor(props) {
         super(props);
